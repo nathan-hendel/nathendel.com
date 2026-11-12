@@ -61,20 +61,21 @@ Click **Install** in the dialog that appears. It takes a few minutes.
 Sign in at **domains.squarespace.com** with the Google account you used for
 Google Domains → `nathendel.com` → **DNS** → **DNS Settings**.
 
-1. **Remove** the Google Sites records: the `www` CNAME to `ghs.googlehosted.com`,
-   and any Google Sites / domain forwarding preset for the bare domain.
-2. **Add** these records:
+Current setup (done November 2026):
 
-| Host | Type | Data |
+| Where | Record | Points to |
 |---|---|---|
-| `www` | CNAME | `YOUR-GITHUB-USERNAME.github.io` |
-| `@` | A | `185.199.108.153` |
-| `@` | A | `185.199.109.153` |
-| `@` | A | `185.199.110.153` |
-| `@` | A | `185.199.111.153` |
+| Custom records | `www` CNAME | `nathan-hendel.github.io` |
+| Squarespace Domain Forwarding | `nathendel.com` → `www.nathendel.com` | (keep as is) |
 
-3. Wait 10 minutes to a few hours for DNS to update. Then, back in
-   **GitHub → Settings → Pages**, tick **Enforce HTTPS** once it's offered.
+The bare domain is handled by Squarespace's forwarding rule, so no `@` A records
+are needed. Don't add GitHub's `185.199.x.x` A records unless you delete the
+forwarding rule first; Squarespace won't allow both.
+
+Leave the other records alone: `_domainconnect` (Squarespace) and the
+`…dv.googlehosted.com` CNAME (old Google verification) are harmless.
+
+After DNS updates, tick **Enforce HTTPS** in **GitHub → Settings → Pages**.
 
 ### 4. Retire the Google Site
 
