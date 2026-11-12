@@ -222,3 +222,46 @@ footer { border-top: 1px solid var(--rule); padding: 24px 0 40px; color: var(--m
   .lead { font-size: 18px; }
   .feature { padding: 18px; }
 }
+
+/* ---------- Music page ---------- */
+.album {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+.album-cover { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 8px 24px rgba(29, 42, 36, .15); }
+.quote { margin: 16px 0 20px; padding-left: 16px; border-left: 3px solid var(--ball); }
+.quote p { font-family: var(--display); font-size: 19px; line-height: 1.45; margin: 0 0 6px; }
+.quote cite { font-style: normal; font-size: 14px; color: var(--muted); }
+.quote cite::before { content: "— "; }
+
+.buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+.button {
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.button:hover { color: var(--ink); border-color: var(--accent); background: var(--bg); }
+
+.bandcamp {
+  margin-top: 28px;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.bandcamp iframe { display: block; width: 100%; height: 540px; border: 0; }
+
+.more-links { margin-top: 24px; color: var(--muted); font-size: 15px; }
+
+@media (max-width: 600px) {
+  .album { grid-template-columns: 1fr; }
+  .album-cover { max-width: 280px; }
+}
