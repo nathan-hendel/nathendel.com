@@ -20,10 +20,12 @@ the top is repeated in every page, so a new page needs a link added in each one.
 | File | Page |
 |---|---|
 | `index.html` | Home (`/`) |
-| `scientific-writing-and-papers/index.html` | Scientific Writing and Papers |
+| `music/index.html` | Music |
+| `tennis/index.html` | Tennis |
+| `movies/index.html` | Movies |
+| `science/index.html` | Science: papers |
 | `scientific-writing-and-papers/introduction-to-dissertation/index.html` | Dissertation intro (PDF embedded from Google Drive) |
-| `music-movies/index.html` | Music & Movies (YouTube embeds) |
-| `home/index.html` | Redirects old `/home` links to `/` |
+| `home/`, `music-movies/`, `scientific-writing-and-papers/` | Redirects from old Google Sites links |
 | `404.html` | "Page not found" page |
 | `style.css` | All styling (colors, fonts, layout; includes dark mode) |
 | `CNAME` | Tells GitHub Pages the site's domain |
