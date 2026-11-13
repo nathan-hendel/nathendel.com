@@ -21,7 +21,6 @@ the top is repeated in every page, so a new page needs a link added in each one.
 |---|---|
 | `index.html` | Home (`/`) |
 | `music/index.html` | Music |
-| `tennis/index.html` | Tennis |
 | `movies/index.html` | Movies |
 | `science/index.html` | Science: papers |
 | `scientific-writing-and-papers/introduction-to-dissertation/index.html` | Dissertation intro (PDF embedded from Google Drive) |

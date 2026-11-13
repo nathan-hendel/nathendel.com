@@ -11,7 +11,7 @@
   --rule: #e2dacb;        /* lines and borders */
   --accent: #2e5e4e;      /* links, headings accents (court green) */
   --accent-ink: #1f4236;  /* link hover */
-  --ball: #d7e34a;        /* tennis-ball highlight */
+  --ball: #d7e34a;        /* yellow-green highlight (active tab, dot) */
   --display: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --radius: 14px;
@@ -145,7 +145,7 @@ p { margin: 0 0 16px; }
 /* ---------- Cards (Home sections) ---------- */
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-top: 40px;
 }

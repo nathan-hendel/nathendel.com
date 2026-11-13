@@ -11,7 +11,7 @@ unless Nat asks otherwise.
 - Use root-absolute links (`/style.css`, `/music-movies/`), which work on GitHub Pages.
 - Video embeds use `youtube-nocookie.com/embed/<id>` inside `<div class="embed">`.
   Don't add `loading="lazy"` to embeds: it left them blank in testing.
-- Tabs (in this order): Home `/`, Music `/music/`, Tennis `/tennis/`, Movies `/movies/`, Science `/science/`.
+- Tabs (in this order): Home `/`, Science `/science/`, Music `/music/`, Movies `/movies/`.
   Publications go in the `<ul class="pubs">` list on `science/index.html`. The dissertation
   page stays at its old URL. `home/`, `music-movies/` and `scientific-writing-and-papers/`
   are redirect stubs for old Google Sites links; keep them.
